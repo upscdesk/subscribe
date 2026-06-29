@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe - The Essay Desk</title>
+<style>
+  :root{ --claret:#7A2D3A; --deep:#5E222C; --gold:#B8860B; --ink:#221F26; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);
+       background:#FBF7F0;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+  .band{background:var(--deep);color:#fff;width:100%;text-align:center;padding:26px 16px}
+  .band h1{font-size:26px;letter-spacing:1px;font-weight:800}
+  .band p{color:#E9D9C5;font-style:italic;margin-top:6px;font-size:14px}
+  .card{max-width:440px;margin:34px 18px;text-align:center}
+  .desc{font-size:16px;color:#4a4148;line-height:1.5;margin-bottom:20px}
+  .price{margin:8px 0 24px}
+  .price .old{color:#9a9590;text-decoration:line-through;text-decoration-color:#C62828;
+              text-decoration-thickness:2px;font-size:18px;margin-right:10px}
+  .price .new{color:var(--claret);font-weight:800;font-size:26px}
+  .price .per{color:#6a6168;font-size:15px}
+  .tag{display:inline-block;background:#FBF3DD;color:var(--gold);font-weight:700;
+       font-size:12px;letter-spacing:1px;padding:5px 12px;border-radius:6px;margin-top:8px}
+  .btnwrap{margin:26px 0 18px;min-height:48px}
+  .foot{color:#9a8f86;font-size:12px;margin-top:10px;line-height:1.7}
+  .foot a{color:var(--claret)}
+</style>
+</head>
+<body>
+  <div class="band">
+    <h1>THE ESSAY DESK</h1>
+    <p>UPSC Essay, decoded.</p>
+  </div>
+
+  <div class="card">
+    <div class="desc">The daily UPSC Essay brief - two full model essays with the examiner's commentary, three mornings a week.</div>
+    <div class="price">
+      <span class="old">&#8377;2,999</span><span class="new">&#8377;1,999</span><span class="per"> / month</span>
+      <div class="tag">INTRODUCTORY OFFER</div>
+    </div>
+
+    <!-- Razorpay subscription button -->
+    <div class="btnwrap">
+      <form>
+        <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
+                data-subscription_button_id="pl_T7WfhAHWpIctU6"
+                data-button_theme="brand-color" async></script>
+      </form>
+    </div>
+
+    <div class="foot">
+      Secure recurring payment by Razorpay. Cancel anytime.<br>
+      Questions? <a href="mailto:team@upscdesk.com">team@upscdesk.com</a>
+    </div>
+  </div>
+</body>
+</html>
