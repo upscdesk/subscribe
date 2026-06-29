@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe - The Sociology Desk</title>
+<style>
+  :root{ --steel:#1E3A5F; --deep:#16293F; --amber:#F59E0B; --ink:#221F26; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);
+       background:#F4F7FB;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+  .band{background:var(--deep);color:#fff;width:100%;text-align:center;padding:26px 16px}
+  .band h1{font-size:26px;letter-spacing:1px;font-weight:800}
+  .band p{color:#C9D8EC;font-style:italic;margin-top:6px;font-size:14px}
+  .card{max-width:440px;margin:34px 18px;text-align:center}
+  .desc{font-size:16px;color:#41495a;line-height:1.5;margin-bottom:20px}
+  .price{margin:8px 0 24px}
+  .price .old{color:#94a0b3;text-decoration:line-through;text-decoration-color:#C62828;
+              text-decoration-thickness:2px;font-size:18px;margin-right:10px}
+  .price .new{color:var(--steel);font-weight:800;font-size:26px}
+  .price .per{color:#5a6573;font-size:15px}
+  .tag{display:inline-block;background:#FEF3DD;color:#B45309;font-weight:700;
+       font-size:12px;letter-spacing:1px;padding:5px 12px;border-radius:6px;margin-top:8px}
+  .btnwrap{margin:26px 0 18px;min-height:48px}
+  .foot{color:#8a93a3;font-size:12px;margin-top:10px;line-height:1.7}
+  .foot a{color:var(--steel)}
+</style>
+</head>
+<body>
+  <div class="band">
+    <h1>THE SOCIOLOGY DESK</h1>
+    <p>Current Affairs through a Sociological Lens.</p>
+  </div>
+
+  <div class="card">
+    <div class="desc">The daily UPSC Sociology brief - model answers with the right thinker and concept for each, every morning.</div>
+    <div class="price">
+      <span class="old">&#8377;4,999</span><span class="new">&#8377;2,999</span><span class="per"> / month</span>
+      <div class="tag">INTRODUCTORY OFFER</div>
+    </div>
+
+    <!-- Razorpay subscription button -->
+    <div class="btnwrap">
+      <form>
+        <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
+                data-subscription_button_id="pl_T7YYXmWcKYoUL6"
+                data-button_theme="brand-color" async></script>
+      </form>
+    </div>
+
+    <div class="foot">
+      Secure recurring payment by Razorpay. Cancel anytime.<br>
+      Questions? <a href="mailto:team@upscdesk.com">team@upscdesk.com</a>
+    </div>
+  </div>
+</body>
+</html>
