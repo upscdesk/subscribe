@@ -19,7 +19,7 @@
   .tag{color:var(--gold);font-weight:700;letter-spacing:3px;font-size:13px;margin-top:6px}
   .divider{width:120px;height:6px;background:var(--gold);border-radius:3px;margin:14px auto 0}
   .band p{color:var(--support);margin-top:14px;font-size:15px}
-  .wrap{max-width:820px;margin:0 auto;padding:28px 18px 60px}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 18px 60px}
   .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:30px;margin-top:22px;
         box-shadow:0 6px 24px rgba(37,22,51,.07)}
   h2{color:var(--plum);font-size:24px;margin-bottom:6px;text-wrap:balance}
@@ -27,14 +27,16 @@
   ul{list-style:none;margin:8px 0 8px}
   li{padding:8px 0 8px 30px;position:relative;font-size:16px}
   li:before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:6px}
-  .plan{border:1px solid var(--border);border-radius:14px;padding:22px;background:var(--ground);display:flex;flex-direction:column;gap:10px}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:6px}
+  .plan{border:1px solid var(--border);border-radius:14px;padding:22px 18px;min-width:0;background:var(--ground);display:flex;flex-direction:column;gap:10px}
   .plan.lead{border:2px solid var(--gold);background:var(--goldlt)}
   .label{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--golddk);text-transform:uppercase}
   .amount{font-size:34px;font-weight:800;color:var(--plum);font-variant-numeric:tabular-nums}
   .amount span{font-size:15px;font-weight:400;color:var(--muted)}
   .note{font-size:14px;color:var(--muted)}
-  .btnwrap{margin-top:auto;padding-top:6px;min-height:52px}
+  /* Razorpay's widget is a fixed-width card (about 367px): centre it and never let it push the plan card wider */
+  .btnwrap{margin-top:auto;padding-top:6px;min-height:52px;display:flex;justify-content:center;max-width:100%;overflow-x:auto}
+  @media (max-width:520px){.wrap{padding:18px 8px 40px}.card{padding:20px 12px}.plan{padding:18px 4px}.plan>.label,.plan>.amount,.plan>.note{padding:0 12px}}
   .steps{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
   .step{flex:1;min-width:200px;background:var(--ground);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:15px}
   .step b{color:var(--plum)}
