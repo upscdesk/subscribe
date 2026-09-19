@@ -4,54 +4,109 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subscribe - The Sociology Desk</title>
+<meta name="description" content="The Sociology Desk daily brief: the day's events decoded into the Sociology syllabus with model answers, thinkers and concepts, every morning. 2,999 rupees a month.">
 <style>
-  :root{ --steel:#1E3A5F; --deep:#16293F; --amber:#F59E0B; --ink:#221F26; }
+  /* The Sociology Desk, Steel and Amber (the locked UPSC Desk design system) */
+  :root{
+    --claret:#1E3A5F; --deep:#142038; --strip:#0C1A2E; --gold:#F59E0B; --golddk:#B26E00;
+    --tint:#DCE8F5; --support:#B8CCE0; --motif:#3C587F; --ink:#1A1A2E; --muted:#56637A;
+    --border:#D5DEEA; --white:#fff; --ground:#F5F8FC;
+  }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);
-       background:#F4F7FB;min-height:100vh;display:flex;flex-direction:column;align-items:center}
-  .band{background:var(--deep);color:#fff;width:100%;text-align:center;padding:26px 16px}
-  .band h1{font-size:26px;letter-spacing:1px;font-weight:800}
-  .band p{color:#C9D8EC;font-style:italic;margin-top:6px;font-size:14px}
-  .card{max-width:440px;margin:34px 18px;text-align:center}
-  .desc{font-size:16px;color:#41495a;line-height:1.5;margin-bottom:20px}
-  .price{margin:8px 0 24px}
-  .price .old{color:#94a0b3;text-decoration:line-through;text-decoration-color:#C62828;
-              text-decoration-thickness:2px;font-size:18px;margin-right:10px}
-  .price .new{color:var(--steel);font-weight:800;font-size:26px}
-  .price .per{color:#5a6573;font-size:15px}
-  .tag{display:inline-block;background:#FEF3DD;color:#B45309;font-weight:700;
-       font-size:12px;letter-spacing:1px;padding:5px 12px;border-radius:6px;margin-top:8px}
-  .btnwrap{margin:26px 0 18px;min-height:48px}
-  .foot{color:#8a93a3;font-size:12px;margin-top:10px;line-height:1.7}
-  .foot a{color:var(--steel)}
+  body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--ground);line-height:1.5}
+  .band{background:linear-gradient(135deg,var(--claret),var(--deep));color:#fff;text-align:center;padding:44px 20px 40px}
+  .band h1{font-size:36px;letter-spacing:2px;font-weight:800}
+  .tag{color:var(--gold);font-weight:700;letter-spacing:3px;font-size:13px;margin-top:6px}
+  .divider{width:120px;height:6px;background:var(--gold);border-radius:3px;margin:14px auto 0}
+  .band p{color:var(--support);margin-top:14px;font-size:15px}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 18px 60px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:30px;margin-top:22px;box-shadow:0 6px 24px rgba(20,32,56,.08)}
+  h2{color:var(--claret);font-size:24px;margin-bottom:6px;text-wrap:balance}
+  .sub{color:var(--muted);font-size:15px;margin-bottom:18px}
+  ul{list-style:none;margin:8px 0 8px}
+  li{padding:8px 0 8px 30px;position:relative;font-size:16px}
+  li:before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:6px}
+  .plan{border:2px solid var(--gold);border-radius:14px;padding:22px 18px;min-width:0;background:var(--tint);display:flex;flex-direction:column;gap:10px;max-width:520px}
+  .label{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--golddk);text-transform:uppercase}
+  .amount{font-size:34px;font-weight:800;color:var(--claret);font-variant-numeric:tabular-nums}
+  .amount span{font-size:15px;font-weight:400;color:var(--muted)}
+  .note{font-size:14px;color:var(--muted)}
+  .btnwrap{margin-top:auto;padding-top:6px;min-height:52px;display:flex;justify-content:center;max-width:100%;overflow-x:auto}
+  @media (max-width:520px){.wrap{padding:18px 8px 40px}.card{padding:20px 12px}.plan{padding:18px 4px}.plan>.label,.plan>.amount,.plan>.note{padding:0 12px}}
+  .steps{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+  .step{flex:1;min-width:200px;background:var(--ground);border:1px solid var(--border);border-radius:12px;padding:16px;font-size:15px}
+  .step b{color:var(--claret)}
+  .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.7}
+  .foot a,.free a{color:var(--claret)}
+  .free{font-size:15px}
 </style>
 </head>
 <body>
+
   <div class="band">
     <h1>THE SOCIOLOGY DESK</h1>
-    <p>Current Affairs through a Sociological Lens.</p>
+    <div class="tag">CURRENT AFFAIRS THROUGH A SOCIOLOGICAL LENS</div>
+    <div class="divider"></div>
+    <p>Today's news, fused with the syllabus into the answer that scores, every morning.</p>
   </div>
 
-  <div class="card">
-    <div class="desc">The daily UPSC Sociology brief - model answers with the right thinker and concept for each, every morning.</div>
-    <div class="price">
-      <span class="old">&#8377;4,999</span><span class="new">&#8377;2,999</span><span class="per"> / month</span>
-      <div class="tag">INTRODUCTORY OFFER</div>
+  <div class="wrap">
+    <div class="card">
+      <h2>The Sociology Desk Daily Brief</h2>
+      <div class="sub">Every morning. The current event is your evidence. The theory is your destination.</div>
+
+      <p style="margin-bottom:6px;font-weight:700;color:var(--claret)">What reaches your inbox every morning:</p>
+      <ul>
+        <li>The day's top events, each mapped to its Paper 1 or Paper 2 node, with the concept and the thinker that turn it into an answer</li>
+        <li>Model answers for the 10 and 20 markers: the average script and the one the examiner rewards, side by side</li>
+        <li>Answer skeletons, a quotation arsenal and concept flashcards you can revise from</li>
+        <li>Probable Mains questions in UPSC's voice, and the examiner's eye on what lifts a 14 to a 19</li>
+        <li>Indian and Western thinkers, Paper 1 and Paper 2, every day, so the syllabus is never far from the news</li>
+      </ul>
     </div>
 
-    <!-- Razorpay subscription button -->
-    <div class="btnwrap">
-      <form>
-        <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
-                data-subscription_button_id="pl_T7YYXmWcKYoUL6"
-                data-button_theme="brand-color" async></script>
-      </form>
+    <div class="card">
+      <h2>The plan</h2>
+      <div class="sub">One monthly subscription. It renews automatically until you cancel.</div>
+      <div class="plans">
+        <div class="plan">
+          <div class="label">Monthly</div>
+          <div class="amount">&#8377;2,999 <span>/ month</span></div>
+          <div class="note">A brief every morning, about thirty issues a month. Under 100 rupees a day.</div>
+          <div class="btnwrap">
+            <!-- Razorpay subscription button, plan: Sociology Desk Monthly (Rs 2,999) -->
+            <form>
+              <script src="https://cdn.razorpay.com/static/widget/subscription-button.js"
+                      data-subscription_button_id="pl_T7YYXmWcKYoUL6"
+                      data-button_theme="brand-color" async></script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size:20px">How it works</h2>
+      <div class="steps">
+        <div class="step"><b>1. Subscribe</b><br>Pay securely through Razorpay. It renews automatically until you cancel.</div>
+        <div class="step"><b>2. Get onboarded</b><br>Your email is added to the Sociology Desk list the same day.</div>
+        <div class="step"><b>3. Receive the brief</b><br>The PDF reaches your inbox every morning.</div>
+      </div>
+    </div>
+
+    <div class="card free">
+      <h2 style="font-size:20px">Not ready yet?</h2>
+      The daily Sociology masterclass is free: the day's events, decoded into the syllabus with the right concept and thinker. Watch on the UPSC Desk YouTube channel and follow <a href="https://t.me/upscdesk_sociology">@upscdesk_sociology</a> on Telegram.
     </div>
 
     <div class="foot">
-      Secure recurring payment by Razorpay. Cancel anytime.<br>
-      Questions? <a href="mailto:team@upscdesk.com">team@upscdesk.com</a>
+      Questions? Write to <a href="mailto:team@upscdesk.com">team@upscdesk.com</a><br>
+      The Sociology Desk is a UPSC Desk product of Highline Broadway Capital. Payments are securely processed by
+      Razorpay and billed by Highline Broadway Capital. You can cancel at any time; access continues to the end of the paid period.<br>
+      &copy; 2026 Highline Broadway Capital. All rights reserved.
     </div>
   </div>
+
 </body>
 </html>
