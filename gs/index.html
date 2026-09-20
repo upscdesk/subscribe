@@ -43,14 +43,6 @@
   .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.7}
   .foot a,.free a{color:var(--plum)}
   .free{font-size:15px}
-
-    .evalbox{border:1.6px solid #D2A24C;background:#fff;border-radius:6px;padding:15px 17px;
-      margin:0 0 18px;display:flex;gap:13px;align-items:flex-start}
-    .evalbox h3{margin:0 0 5px;font-size:15px;color:#A67A2E;letter-spacing:.2px}
-    .evalbox p{margin:0 0 7px;font-size:13.5px;line-height:1.6}
-    .evalbox a.go{display:inline-block;font-weight:700;font-size:13.5px;color:#3E2A52;
-      text-decoration:none;border-bottom:2px solid #D2A24C;padding-bottom:1px}
-    .evalbox .free{font-size:12.5px;color:#5B6270;margin:0}
   
     .gets{margin:14px 0 4px;padding:12px 13px;background:#FBF6EC;border:1px solid #E6DCCA;border-radius:5px}
     .gets .gh{font-size:10px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;
@@ -61,6 +53,22 @@
     .gets li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;
       background:#D2A24C;border-radius:2px}
     .gets li b{color:#3E2A52}
+  
+    .offer{margin:0}
+    .offer h2{margin:0 0 4px}
+    .offer .lede{color:#5B6270;font-size:13.5px;margin:0 0 16px}
+    .headline-item{border:1.6px solid #D2A24C;border-radius:6px;padding:15px 17px;margin:0 0 16px;background:#FBF6EC}
+    .headline-item .n{font:700 30px/1 Arial,sans-serif;color:#A67A2E;letter-spacing:-.5px}
+    .headline-item .t{font-size:15px;font-weight:700;color:#3E2A52;margin:6px 0 6px}
+    .headline-item p{margin:0;font-size:13.5px;line-height:1.6}
+    .headline-item .more{margin:10px 0 0;font-size:12.5px;color:#5B6270}
+    .headline-item .more a{color:#3E2A52;font-weight:700}
+    .brief-head{font-size:15px;font-weight:700;color:#3E2A52;margin:0 0 9px}
+    .offer ul{margin:0;padding:0;list-style:none}
+    .offer ul li{position:relative;padding-left:21px;margin-bottom:8px;font-size:13.5px;line-height:1.55}
+    .offer ul li:last-child{margin-bottom:0}
+    .offer ul li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;
+      background:#D2A24C;border-radius:2px}
   </style>
 </head>
 <body>
@@ -73,33 +81,28 @@
   </div>
 
   <div class="wrap">
-    <div class="card">
-      <h2>The GS Desk Daily Brief</h2>
-      <div class="sub">All four GS papers every day, each item tied to the syllabus node it belongs to.</div>
+    <div class="card offer">
+      <h2>What your subscription gives you</h2>
+      <p class="lede">Two things, every month, for one price.</p>
 
-      <p style="margin-bottom:6px;font-weight:700;color:var(--plum)">What reaches your inbox every morning:</p>
+      <div class="headline-item">
+        <div class="n">10</div>
+        <div class="t">of your own answers evaluated, every month</div>
+        <p>Write 10, 15 and 20 mark answers, photograph the page and send them. Each one comes back with the
+           examiner's notes written in the margin, the marks it would earn as it stands, and the
+           specific changes that will lift them.</p>
+        <p class="more">Need more than 10 a month? Write to
+           <a href="mailto:team@upscdesk.com">team@upscdesk.com</a> and we will sort it out.</p>
+      </div>
+
+      <div class="brief-head">And the daily brief, every morning</div>
       <ul>
-        <li>GS-I to GS-IV daily, each mapped to its syllabus node</li>
-        <li>A probable Mains question per paper, and the PYQ it echoes</li>
-        <li>The 360-degree skeleton: what to write, where to jump, what to cite</li>
-        <li>One full model answer, and a GS-IV case study on the clock</li>
+        <li>GS-I to GS-IV every day, each item mapped to the syllabus node it belongs to</li>
+        <li>A probable Mains question per paper, and the past question it echoes</li>
+        <li>The full skeleton: what to write, where to jump, what to cite, plus a GS-IV case study</li>
       </ul>
     </div>
-
-    <div class="evalbox">
-      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="#A67A2E" stroke-width="1.7" style="flex:0 0 auto"><rect x="4" y="4" width="17" height="24"/><path d="M15 4v24"/><path d="M7 11h5M7 16h5M7 21h4"/><path d="M18 17l3 3 6-9" stroke-width="2.2"/></svg>
-      <div>
-        <h3>Before you pay, send us one answer</h3>
-        <p>Write one, photograph the page and send it. It comes back with the examiner's notes
-           written in the margin, the marks it would get as it stands, and the marks it would get
-           if you made three changes.</p>
-        <p class="free">Five free every month. No card, just an email address.</p>
-        <p style="margin-top:9px"><a class="go" href="https://evaluate.upscdesk.com/?d=gs">Get an answer marked &rarr;</a></p>
-      </div>
-    </div>
-
-
-    <div class="card">
+<div class="card">
       <h2>Choose your plan</h2>
       <div class="sub">Every plan includes <b>10 evaluated answers a month</b>, marked the same way.</div>
       <div class="sub">Founding price for the first 300 subscribers. It stays at this price for as long as you remain subscribed.</div>
@@ -108,16 +111,7 @@
         <div class="plan lead">
           <div class="label">Founding member, monthly</div>
           <div class="amount">&#8377;499 <span>/ month</span></div>
-          <div class="note">About 16 rupees a day. Locked for life while your subscription is active. The standard price after the first 300 is &#8377;999.</div>
-          <div class="gets">
-            <div class="gh">What the subscription includes</div>
-            <ul>
-              <li><b>10 answers evaluated every month.</b> Write 10, 15 and 20 mark answers, photograph the page
-                  and send it. It comes back with the examiner's notes in the margin, the marks it
-                  would earn, and the changes that will lift them.</li>
-              <li><b>The daily brief</b>, delivered to your inbox each morning.</li>
-            </ul>
-          </div>
+          <div class="note">A brief every day and 10 answers evaluated, for about 16 rupees a day. Locked for life while your subscription is active. The standard price after the first 300 is &#8377;999.</div>
           <div class="btnwrap">
             <!-- Razorpay subscription button, plan: GS Desk Founding Monthly (Rs 499). notes.subject=GS -->
             <form>
@@ -131,16 +125,7 @@
         <div class="plan">
           <div class="label">Annual</div>
           <div class="amount">&#8377;4,999 <span>/ year</span></div>
-          <div class="note">One payment for the full cycle, Prelims to Mains. Works out to about 417 rupees a month.</div>
-          <div class="gets">
-            <div class="gh">What the subscription includes</div>
-            <ul>
-              <li><b>10 answers evaluated every month.</b> Write 10, 15 and 20 mark answers, photograph the page
-                  and send it. It comes back with the examiner's notes in the margin, the marks it
-                  would earn, and the changes that will lift them.</li>
-              <li><b>The daily brief</b>, delivered to your inbox each morning.</li>
-            </ul>
-          </div>
+          <div class="note">One payment for the full cycle, Prelims to Mains, with 10 answers evaluated each month. About 417 rupees a month.</div>
           <div class="btnwrap">
             <!-- Razorpay subscription button, plan: GS Desk Annual (Rs 4,999). notes.subject=GS -->
             <form>

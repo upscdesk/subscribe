@@ -40,14 +40,6 @@
   .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.7}
   .foot a,.free a{color:var(--claret)}
   .free{font-size:15px}
-
-    .evalbox{border:1.6px solid #B8860B;background:#fff;border-radius:6px;padding:15px 17px;
-      margin:0 0 18px;display:flex;gap:13px;align-items:flex-start}
-    .evalbox h3{margin:0 0 5px;font-size:15px;color:#8A6300;letter-spacing:.2px}
-    .evalbox p{margin:0 0 7px;font-size:13.5px;line-height:1.6}
-    .evalbox a.go{display:inline-block;font-weight:700;font-size:13.5px;color:#7A2D3A;
-      text-decoration:none;border-bottom:2px solid #B8860B;padding-bottom:1px}
-    .evalbox .free{font-size:12.5px;color:#5B6270;margin:0}
   
     .gets{margin:14px 0 4px;padding:12px 13px;background:#FBF6EC;border:1px solid #E6DCCA;border-radius:5px}
     .gets .gh{font-size:10px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;
@@ -58,6 +50,22 @@
     .gets li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;
       background:#B8860B;border-radius:2px}
     .gets li b{color:#7A2D3A}
+  
+    .offer{margin:0}
+    .offer h2{margin:0 0 4px}
+    .offer .lede{color:#5B6270;font-size:13.5px;margin:0 0 16px}
+    .headline-item{border:1.6px solid #B8860B;border-radius:6px;padding:15px 17px;margin:0 0 16px;background:#FBF6EC}
+    .headline-item .n{font:700 30px/1 Arial,sans-serif;color:#8A6300;letter-spacing:-.5px}
+    .headline-item .t{font-size:15px;font-weight:700;color:#7A2D3A;margin:6px 0 6px}
+    .headline-item p{margin:0;font-size:13.5px;line-height:1.6}
+    .headline-item .more{margin:10px 0 0;font-size:12.5px;color:#5B6270}
+    .headline-item .more a{color:#7A2D3A;font-weight:700}
+    .brief-head{font-size:15px;font-weight:700;color:#7A2D3A;margin:0 0 9px}
+    .offer ul{margin:0;padding:0;list-style:none}
+    .offer ul li{position:relative;padding-left:21px;margin-bottom:8px;font-size:13.5px;line-height:1.55}
+    .offer ul li:last-child{margin-bottom:0}
+    .offer ul li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;
+      background:#B8860B;border-radius:2px}
   </style>
 </head>
 <body>
@@ -70,34 +78,28 @@
   </div>
 
   <div class="wrap">
-    <div class="card">
-      <h2>The Essay Desk Brief</h2>
-      <div class="sub">Monday, Wednesday and Friday. Two complete essays an issue, written the way the top band writes them.</div>
+    <div class="card offer">
+      <h2>What your subscription gives you</h2>
+      <p class="lede">Two things, every month, for one price.</p>
 
-      <p style="margin-bottom:6px;font-weight:700;color:var(--claret)">What reaches your inbox every issue:</p>
+      <div class="headline-item">
+        <div class="n">20</div>
+        <div class="t">of your own answers evaluated, every month</div>
+        <p>Write full essays, photograph the page and send them. Each one comes back with the
+           examiner's notes written in the margin, the marks it would earn as it stands, and the
+           specific changes that will lift them.</p>
+        <p class="more">Need more than 20 a month? Write to
+           <a href="mailto:team@upscdesk.com">team@upscdesk.com</a> and we will sort it out.</p>
+      </div>
+
+      <div class="brief-head">And the daily brief, every morning</div>
       <ul>
-        <li>Two full model essays, 1,000 to 1,200 words each: one abstract or philosophical, one socio-economic</li>
-        <li>The examiner's commentary in the margin, aligned to each paragraph: what earns the marks and why</li>
-        <li>For each topic: the decode, the thesis, the dimensions map and an anchor bank you can reuse</li>
-        <li>Current, sourced data woven into the argument the way a top essay does it, never dropped in as a list</li>
-        <li>Fresh topics every issue, written in the bare aphoristic voice UPSC now favours, never a reprint of a past paper</li>
+        <li>Two complete model essays an issue, 1000 to 1200 words each, one from each section</li>
+        <li>The examiner's commentary in the margin, naming the move that lifts a script</li>
+        <li>Decode, thesis, dimensions map and anchor bank for every topic</li>
       </ul>
     </div>
-
-    <div class="evalbox">
-      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="#8A6300" stroke-width="1.7" style="flex:0 0 auto"><rect x="4" y="4" width="17" height="24"/><path d="M15 4v24"/><path d="M7 11h5M7 16h5M7 21h4"/><path d="M18 17l3 3 6-9" stroke-width="2.2"/></svg>
-      <div>
-        <h3>Before you pay, send us one answer</h3>
-        <p>Write one, photograph the page and send it. It comes back with the examiner's notes
-           written in the margin, the marks it would get as it stands, and the marks it would get
-           if you made three changes.</p>
-        <p class="free">Five free every month. No card, just an email address.</p>
-        <p style="margin-top:9px"><a class="go" href="https://evaluate.upscdesk.com/?d=essay">Get an answer marked &rarr;</a></p>
-      </div>
-    </div>
-
-
-    <div class="card">
+<div class="card">
       <h2>The plan</h2>
       <div class="sub">One monthly subscription. It renews automatically until you cancel.</div>
       <div class="sub" style="margin-top:6px">Every plan includes <b>20 evaluated answers a month</b>, marked the same way.</div>
@@ -105,16 +107,7 @@
         <div class="plan">
           <div class="label">Monthly</div>
           <div class="amount">&#8377;1,999 <span>/ month</span></div>
-          <div class="note">Twelve to fourteen issues a month, twenty-four to twenty-eight full essays. About 67 rupees a day.</div>
-          <div class="gets">
-            <div class="gh">What the subscription includes</div>
-            <ul>
-              <li><b>20 answers evaluated every month.</b> Write full essays, photograph the page
-                  and send it. It comes back with the examiner's notes in the margin, the marks it
-                  would earn, and the changes that will lift them.</li>
-              <li><b>The daily brief</b>, delivered to your inbox each morning.</li>
-            </ul>
-          </div>
+          <div class="note">Twelve to fourteen issues a month, and 20 of your essays evaluated. About 67 rupees a day.</div>
           <div class="btnwrap">
             <!-- Razorpay subscription button, plan: Essay Desk Monthly (Rs 1,999) -->
             <form>
