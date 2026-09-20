@@ -40,7 +40,15 @@
   .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.7}
   .foot a,.free a{color:var(--claret)}
   .free{font-size:15px}
-</style>
+
+    .evalbox{border:1.6px solid #B8860B;background:#fff;border-radius:6px;padding:15px 17px;
+      margin:0 0 18px;display:flex;gap:13px;align-items:flex-start}
+    .evalbox h3{margin:0 0 5px;font-size:15px;color:#8A6300;letter-spacing:.2px}
+    .evalbox p{margin:0 0 7px;font-size:13.5px;line-height:1.6}
+    .evalbox a.go{display:inline-block;font-weight:700;font-size:13.5px;color:#7A2D3A;
+      text-decoration:none;border-bottom:2px solid #B8860B;padding-bottom:1px}
+    .evalbox .free{font-size:12.5px;color:#5B6270;margin:0}
+  </style>
 </head>
 <body>
 
@@ -66,9 +74,23 @@
       </ul>
     </div>
 
+    <div class="evalbox">
+      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="#8A6300" stroke-width="1.7" style="flex:0 0 auto"><rect x="4" y="4" width="17" height="24"/><path d="M15 4v24"/><path d="M7 11h5M7 16h5M7 21h4"/><path d="M18 17l3 3 6-9" stroke-width="2.2"/></svg>
+      <div>
+        <h3>Before you pay, send us one answer</h3>
+        <p>Write one, photograph the page and send it. It comes back with the examiner's notes
+           written in the margin, the marks it would get as it stands, and the marks it would get
+           if you made three changes.</p>
+        <p class="free">Five free every month. No card, just an email address.</p>
+        <p style="margin-top:9px"><a class="go" href="https://evaluate.upscdesk.com/?d=essay">Get an answer marked &rarr;</a></p>
+      </div>
+    </div>
+
+
     <div class="card">
       <h2>The plan</h2>
       <div class="sub">One monthly subscription. It renews automatically until you cancel.</div>
+      <div class="sub" style="margin-top:6px">Every plan includes <b>20 evaluated answers a month</b>, marked the same way.</div>
       <div class="plans">
         <div class="plan">
           <div class="label">Monthly</div>
@@ -90,7 +112,7 @@
       <h2 style="font-size:20px">How it works</h2>
       <div class="steps">
         <div class="step"><b>1. Subscribe</b><br>Pay securely through Razorpay. It renews automatically until you cancel.</div>
-        <div class="step"><b>2. Get onboarded</b><br>Your email is added to the Essay Desk list the same day.</div>
+        <div class="step"><b>2. You are added</b><br>Your email is added to the Essay Desk list the same day.</div>
         <div class="step"><b>3. Receive the brief</b><br>The PDF reaches your inbox every Monday, Wednesday and Friday morning.</div>
       </div>
     </div>
